@@ -1,0 +1,24 @@
+{
+    "name": "zendframework/skeleton-application",
+    "description": "Skeleton Application for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "autoload": {
+        "psr-0": {"Album": "module/Album/src/"}
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/pasechnik/MongoZend.git"
+        }
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.3.*",
+        "pasechnik/mongozend": "dev-master"
+    }
+}
