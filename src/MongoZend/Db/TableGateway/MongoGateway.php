@@ -571,7 +571,7 @@ class MongoGateway implements TableGatewayInterface
      * @return array|bool|int
      * @throws \Exception
      */
-    public function save( array $model )
+    public function save( $model )
     {
         $data = $this->_convertids( $model );
         $_id  = $model['_id'];
