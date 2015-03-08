@@ -13,13 +13,13 @@ return [
                 'dbname'         => 'wepo_company',
                 'driver_options' => ['connect' => true],
             ],
-            'wepo_mysql' => [
-                'driver'         => 'Pdo',
-                'dsn'            => 'mysql:dbname=album;host=localhost',
-                'driver_options' => [
-                    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
-                ]
-            ],
+//            'wepo_mysql' => [
+//                'driver'         => 'Pdo',
+//                'dsn'            => 'mysql:dbname=album;host=localhost',
+//                'driver_options' => [
+//                    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+//                ]
+//            ],
         ]
     ],
     'service_manager' => [
