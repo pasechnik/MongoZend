@@ -188,7 +188,7 @@ class Mongo implements DriverInterface, DriverFeatureInterface, Profiler\Profile
      */
     public function checkEnvironment()
     {
-        if (!extension_loaded('Mongo')) {
+        if (!class_exists('MongoClient') && !extension_loaded('Mongo')) {
             throw new Exception\RuntimeException('The Mongo extension is required for this adapter but the extension is not loaded');
         }
     }
